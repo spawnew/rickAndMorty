@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import "./botones.css";
 import ContenedorPersonaje from './contenedorPersonaje/ContenedorPersonaje';
 
 
@@ -45,10 +45,11 @@ const Obtenerpersonaje = () => {
             obtener={obtener} />
            
                  
-             <div>
+             <div className='botones'>
                 <p>Pagina:{page}</p>
-                <button onClick={restarpag} className="btn btn-outline-primary">Anterior</button>
-                <button type="button" className="btn btn-outline-primary" onClick={cambiarpag}>Siguiente</button>
+                <div>
+                    <button onClick={restarpag} className="btn btn-outline-primary">Anterior</button>
+                <button type="button" className="btn btn-outline-primary" onClick={cambiarpag}>Siguiente</button></div> 
                 
             </div>
             
