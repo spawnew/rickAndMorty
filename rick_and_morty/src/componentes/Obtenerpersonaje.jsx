@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Mostar from './Mostar';
+import Mostar from './mostrarpersonajes/Mostrar';
 const Obtenerpersonaje = () => {
     const [obtener, setObtener] = useState([])
 

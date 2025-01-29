@@ -1,12 +1,12 @@
 
 
-const Mostrar = ({personaje}) => {
+const Mostrar = ({name,image}) => {
   return (
         <div >
             <h1 > {name}</h1>
-            <img src={personaje.image} alt="" />
+            <img src={image} alt="" />
         </div>
-}
+
   )
 }
 
