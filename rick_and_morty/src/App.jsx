@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>personajesasdsdadassdasda</h1>
+        <h1>Rick and morty</h1>
         <Obtenerpersonaje />
       </div>
 
