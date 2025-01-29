@@ -47,8 +47,9 @@ const Obtenerpersonaje = () => {
                  
              <div>
                 <p>Pagina:{page}</p>
-                <button onClick={cambiarpag}>Siguiente</button>
-                <button onClick={restarpag}>Anterior</button>
+                <button onClick={restarpag} className="btn btn-outline-primary">Anterior</button>
+                <button type="button" className="btn btn-outline-primary" onClick={cambiarpag}>Siguiente</button>
+                
             </div>
             
         
