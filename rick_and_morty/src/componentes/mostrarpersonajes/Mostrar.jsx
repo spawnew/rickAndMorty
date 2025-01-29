@@ -1,9 +1,9 @@
-
+import "./tarjeta.css"
 
 const Mostrar = ({name,image}) => {
   return (
-        <div >
-            <h1 > {name}</h1>
+        <div className="tarjeta" >
+            <p > {name}</p>
             <img src={image} alt="" />
         </div>
 
