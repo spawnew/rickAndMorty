@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import Mostar from './mostrarpersonajes/Mostrar';
-import "./obtener.css"
+
+import ContenedorPersonaje from './contenedorPersonaje/ContenedorPersonaje';
+
 
 
 const Obtenerpersonaje = () => {
@@ -11,6 +12,12 @@ const Obtenerpersonaje = () => {
     const cambiarpag = () => {
         if(page < 42)
         setPage(page + 1)
+
+
+    }
+    const restarpag = () => {
+        if (page > 0)
+            setPage(page - 1)
 
 
     }
@@ -31,15 +38,19 @@ const Obtenerpersonaje = () => {
 
     useEffect(() => {
         character();
-    }, [page]);
+    },[page]);
     return (
-        <div className='obtener' > 
-            
-            {obtener.map((personaje) => < Mostar key={personaje.id } {...personaje} />)
+        <div > 
+            <ContenedorPersonaje
+            obtener={obtener} />
+           
                  
-            } 
-            <p>Pagina:{page}</p>
-            <button onClick={cambiarpag}>Siguiente</button>
+             <div>
+                <p>Pagina:{page}</p>
+                <button onClick={cambiarpag}>Siguiente</button>
+                <button onClick={restarpag}>Anterior</button>
+            </div>
+            
         
         </div>
     )
