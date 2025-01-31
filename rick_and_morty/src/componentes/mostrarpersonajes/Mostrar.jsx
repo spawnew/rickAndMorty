@@ -4,7 +4,13 @@ const Mostrar = ({name,image}) => {
   return (
         <div className="tarjeta" >
             <h4 > {name}</h4>
-            <img src={image} alt="" />
+          <div>
+              <img src={image} alt="" />
+          </div>
+          <div className="botones">
+              <button>detalles</button>
+          </div>
+          
         </div>
 
   )

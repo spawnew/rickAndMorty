@@ -32,3 +32,13 @@
    
     
 }
+.botones button {
+    background-color: #3b3f6b;
+    color: rgb(241, 236, 236);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
