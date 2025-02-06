@@ -9,7 +9,7 @@ const Mostrar = ({name,image,id}) => {
       </div>
       <Link to={`/detalles/${id}`}>
           <div className="botones">
-              <button>detalles</button>
+              <button>Detalles</button>
           </div>
           </Link>
         </div>

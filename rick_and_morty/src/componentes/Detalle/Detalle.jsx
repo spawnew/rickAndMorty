@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-
+import { Link } from 'react-router-dom';
 
 
 const Obtenerpersonaje = () => {
@@ -30,18 +30,28 @@ const Obtenerpersonaje = () => {
         character(id);
     }, [id]);
     return (
-        <div >
+        <div className="contenedor" >
             <div className="tarjeta" >
                 <h4 > {obtener.name}</h4>
                 <div>
                     <img src={obtener.image} alt="" />
                 </div>
+                <p>SALUD:{obtener.status}</p>
+                <p>ESPECIE:{obtener.species}</p>
+                <p>GENERO:{obtener.gender}</p>
+                <p>ORIGEN:{obtener.origin?.name}</p>
+                
+                <Link to="/">
                 <div className="botones">
-                    <button>detalles</button>
+                    <button>Atras</button>
                 </div>
-
+            
+                </Link>
             </div>
-        </div>
+              
+</div>
+            
+      
 
 
     )

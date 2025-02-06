@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import "./botones.css";
 import ContenedorPersonaje from './contenedorPersonaje/ContenedorPersonaje';
+import { useParams } from 'react-router-dom';
 
 
 
 const Obtenerpersonaje = () => {
+    const { status } = useParams();
     const [page, setPage] = useState(1)
 
 
@@ -22,7 +24,7 @@ const Obtenerpersonaje = () => {
 
     }
     const character = () => {
-        fetch(`https://rickandmortyapi.com/api/character/?page=${page}`) // recordar usar las comillas francesas para poder usar variables
+        fetch(`https://rickandmortyapi.com/api/character/${status ? `?page=${page}&status=${status}` : `?page=${page}`}`) // recordar usar las comillas francesas para poder usar variables
             .then((res) => res.json()) // Convierte  la respuesta a JSON no olvidar los () para la funcion json()
             .then((data) => {
                 console.log(data.results);
@@ -38,7 +40,7 @@ const Obtenerpersonaje = () => {
 
     useEffect(() => {
         character();
-    },[page]);
+    },[page,status]);
     return (
         <div > 
             <ContenedorPersonaje

@@ -1,0 +1,27 @@
+.navbar{
+     display: flex;
+    padding: 10px;
+    
+   
+   
+
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.logo h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+}
+.logo{
+    display: flex;
+   
+    align-items: center;
+    justify-items:flex-start;
+    justify-content: space-around;
+}

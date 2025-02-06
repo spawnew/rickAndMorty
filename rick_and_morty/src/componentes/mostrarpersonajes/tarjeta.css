@@ -1,6 +1,6 @@
 .tarjeta {
     width: 300px;
-    height: 400px;
+    height: 450px;
     background-color: #676b80;;
     border-radius: 10px;
     margin: 10px;
@@ -8,9 +8,17 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .tarjeta img {
@@ -22,6 +30,11 @@
 
 .tarjeta:hover{
     background-color:#586088;
+    
+}
+.tarjeta img:hover{
+    width:300px;
+    height: 250px;
 }
 .tarjeta h4 {
     text-align: center;
@@ -41,4 +54,12 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 20px;
+}
+.tarjeta p {
+    text-align: center;
+    font-size: 15px;
+    color: #151620;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
 }
