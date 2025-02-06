@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-
+import { useParams } from 'react-router-dom';
 
 
 
 
 const Obtenerpersonaje = () => {
-
-
+    const { id } = useParams();
+    console.log(id)
 
     const [obtener, setObtener] = useState(""); // se crea un estado para guardar los datos de la api
 
@@ -27,8 +27,8 @@ const Obtenerpersonaje = () => {
 
 
     useEffect(() => {
-        character(1);
-    }, []);
+        character(id);
+    }, [id]);
     return (
         <div >
             <div className="tarjeta" >

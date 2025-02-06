@@ -1,16 +1,17 @@
 import "./tarjeta.css"
-
-const Mostrar = ({name,image}) => {
+import { Link } from "react-router-dom"
+const Mostrar = ({name,image,id}) => {
   return (
         <div className="tarjeta" >
             <h4 > {name}</h4>
           <div>
               <img src={image} alt="" />
-          </div>
+      </div>
+      <Link to={`/detalles/${id}`}>
           <div className="botones">
               <button>detalles</button>
           </div>
-          
+          </Link>
         </div>
 
   )
