@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #151620;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+.container h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #181e57;
+    min-height: 50vh;
+    flex-direction: column;
+}
